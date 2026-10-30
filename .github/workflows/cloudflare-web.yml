@@ -102,7 +102,7 @@ jobs:
 
       - name: Comment PR plan
         if: github.event_name == 'pull_request'
-        uses: dflook/tofu-plan@cdb4f4d604c9fa695e457744dd1f802853397ce7 # v3.0.0
+        uses: dflook/tofu-plan@53b5b01b6eef56cd678401dbe92a0f6ca6b863ff # v3.1.2
         with:
           path: infra/web
           label: ${{ needs.detect.outputs.environment }}
